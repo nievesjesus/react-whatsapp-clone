@@ -22,7 +22,7 @@ const Chat = () => {
       .then(doc => {
         // limpiar el valor        
         setFormValue('');
-        dummy.current.scrollIntoView({ behavior: 'smooth' }); 
+        // dummy.current.scrollIntoView({ behavior: 'smooth' }); 
       })
       .catch( err => {
         console.log(err)
@@ -51,7 +51,7 @@ const Chat = () => {
       // Desmontar linstener
       return unsubscribe
     }, []);
-    
+
     return (<>
       <main>
   
